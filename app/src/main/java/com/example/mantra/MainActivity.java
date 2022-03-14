@@ -21,7 +21,7 @@ import com.mantra.mfs100.MFS100Event;
 public class MainActivity extends Activity implements MFS100Event {
 
     Button cap, stop_cap, match;
-    TextView l_message;
+    TextView l_message, textView2;
     ImageView ImageFinger;
 
 
@@ -57,6 +57,7 @@ public class MainActivity extends Activity implements MFS100Event {
         l_message = findViewById(R.id.textView);
         ImageFinger = findViewById(R.id.imgFinger);
         match = findViewById(R.id.match);
+        textView2 = findViewById(R.id.textView2);
 
         match.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -81,7 +82,7 @@ public class MainActivity extends Activity implements MFS100Event {
                                     @Override
                                     public void run() {
                                         ImageFinger.setImageBitmap(bitmap);
-                                        Verify_Template = fingerData.ISOTemplate();
+                                        Verify_Template =fingerData.ISOTemplate();
                                         match_finger();
                                     }
                                 });
@@ -123,7 +124,10 @@ public class MainActivity extends Activity implements MFS100Event {
                                         ImageFinger.setImageBitmap(bitmap);
                                     }
                                 });
+
                                 Enroll_Template = fingerData.ISOTemplate();
+                                textView2.setText(Enroll_Template.toString());
+
                             }
                         } catch (Exception ex) {
                             SetTextOnUIThread("Error");
