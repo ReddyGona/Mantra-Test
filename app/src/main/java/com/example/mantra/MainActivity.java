@@ -79,7 +79,7 @@ public class MainActivity extends Activity implements MFS100Event {
         l_message = findViewById(R.id.textView2);
         ImageFinger = findViewById(R.id.imgFinger);
         match = findViewById(R.id.match);
-        textView2 = findViewById(R.id.textView1);
+        textView2 = findViewById(R.id.textView2);
         save=findViewById(R.id.save);
         Name=findViewById(R.id.name);
         textView1=findViewById(R.id.textView1);

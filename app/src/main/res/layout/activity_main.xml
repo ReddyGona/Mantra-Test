@@ -97,6 +97,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
+        android:text="Note \n 1. While saving fingerprint add name and tap on save button
+        \n 2. While matching the fingerprint enter the name given to save the fingerprint and then tap in match finger"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
